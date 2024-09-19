@@ -22,7 +22,7 @@ CREATE TABLE MaintenanceSchedules (
     Frequency VARCHAR(50) NOT NULL,
     
 CREATE TABLE Services (
-    ServiceID INT PRIMARY KEY AUTO_INCREMENT,
+    ServiceID INT PRIMARY KEY,
     ScheduleID INT,
     ServiceType VARCHAR(100) NOT NULL,
     Cost DECIMAL(10, 2) NOT NULL,
@@ -30,7 +30,7 @@ CREATE TABLE Services (
     );
 
 CREATE TABLE ServiceProviders (
-    ProviderID INT PRIMARY KEY ,
+    ProviderID INT PRIMARY KEY,
     Name VARCHAR(100) NOT NULL,
     Address VARCHAR(200),
     Phone VARCHAR(15),
